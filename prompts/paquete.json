@@ -1,0 +1,1634 @@
+{
+  "formatVersion": 1,
+  "version": "2026.10.19-2",
+  "publishedAt": "2026-10-19",
+  "appLevel": 2,
+  "responseFormat": 1,
+  "notes": "Se quitan de las camas y otros prompts las frases que describían el objetivo del asset y no su sonido («cómoda durante sesiones largas», «sin competir con las capas de tensión», «dejando sitio a la cama del modal»…), y se dejan sus equivalentes sonoros. Requiere la herramienta con el nivel 2: las camas abren con la escena y no con la duración.",
+  "catalog": [
+    {
+      "categoria": "Interfaz y confirmaciones",
+      "template": "sfx",
+      "profile": "dry",
+      "reglas": "Cortos, con ataque inmediato y sin cola: el jugador los oye cientos de veces por sesión. La UI nunca debe sonar como un premio, ni llevar fanfarria ni lluvia de monedas.",
+      "prompts": [
+        {
+          "nombre": "Botón principal (madera)",
+          "texto": "0.2 seconds. Main action button press in a game interface. Fast attack, short tactile body, immediate stop. Dense wood and soft rubber contact. Confirms the action without suggesting any reward. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.2 s",
+          "tags": [
+            "ui",
+            "boton",
+            "click",
+            "madera"
+          ],
+          "categoria_prefijo": "UI"
+        },
+        {
+          "nombre": "Confirmación con peso",
+          "texto": "0.3 seconds. Settings confirmation in a game menu. Soft attack followed by a short affirmative two-note lift. Warm wood and light glass. Communicates a settled decision without celebration. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.3 s",
+          "tags": [
+            "ui",
+            "confirmar",
+            "menu"
+          ],
+          "categoria_prefijo": "UI"
+        },
+        {
+          "nombre": "Interruptor binario",
+          "texto": "0.1 seconds. Toggle switch in a game interface. Instant click with a tiny upward tail. Small metal switch, plastic housing. Signals a state change, strictly neutral in value. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.1 s",
+          "tags": [
+            "ui",
+            "toggle",
+            "estado"
+          ],
+          "categoria_prefijo": "UI"
+        },
+        {
+          "nombre": "Paso de apuesta",
+          "texto": "0.1 seconds. Bet value increase step in a betting interface. Very short click with a slight upward pitch. Small wooden stepper and light metal. Indicates a rising value without promising a reward. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.1 s",
+          "tags": [
+            "ui",
+            "apuesta",
+            "stepper"
+          ],
+          "categoria_prefijo": "UI"
+        },
+        {
+          "nombre": "Acción bloqueada",
+          "texto": "0.3 seconds. Blocked action in a game interface. Short double low tone with immediate stop. Muted synth and soft plastic. Clearly signals refusal without harshness or punishment. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.3 s",
+          "tags": [
+            "ui",
+            "error",
+            "bloqueo"
+          ],
+          "categoria_prefijo": "UI"
+        },
+        {
+          "nombre": "Panel abriéndose",
+          "texto": "0.3 seconds. Interface panel opening over the game screen. Soft swelling whoosh resolving into a light settle. Fabric and smooth wood. Communicates a new layer appearing. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.3 s",
+          "tags": [
+            "ui",
+            "modal",
+            "transicion"
+          ],
+          "categoria_prefijo": "UI"
+        },
+        {
+          "nombre": "Ficha de arcilla sobre paño",
+          "texto": "0.2 seconds. Casino chip placed on the betting layout. Short muted impact with a light clay edge. Clay chip on felt-covered table. Gives tactile weight to a bet, neutral in value. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.2 s",
+          "tags": [
+            "ui",
+            "ficha",
+            "apuesta",
+            "paño"
+          ],
+          "categoria_prefijo": "UI"
+        }
+      ]
+    },
+    {
+      "categoria": "Mecánicas: rodillos y ruedas",
+      "template": "sfx",
+      "profile": "dry",
+      "reglas": "Nombrar el material que gira y contra qué golpea, y si el impacto es seco o resonante. Deben comunicar movimiento y resolución sin prometer victoria antes del resultado.",
+      "prompts": [
+        {
+          "nombre": "Arranque de rodillos",
+          "texto": "0.4 seconds. Slot reels starting to spin after the spin press. Quick mechanical release accelerating into motion. Wooden reel drum, metal axle, light air movement. Signals that the round has begun. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.4 s",
+          "tags": [
+            "rodillo",
+            "arranque",
+            "slot"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Giro de rodillos (loop)",
+          "texto": "2.0 seconds seamless loop. Slot reels rotating continuously during a spin. Steady fast rolling clicks with even mechanical rhythm. Wooden drum, metal gears, light friction. Sustains motion and builds mild anticipation without promising a win. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "2.0 s",
+          "tags": [
+            "rodillo",
+            "loop",
+            "giro",
+            "slot"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Detención de rodillo",
+          "texto": "0.2 seconds. Single slot reel locking into position. Sharp attack with a short damped body and immediate stop. Solid wood block against a felt-padded stop. Communicates a settled result, neutral in value. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.2 s",
+          "tags": [
+            "rodillo",
+            "detencion",
+            "impacto"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Detención final",
+          "texto": "0.4 seconds. Final reel locking and resolving the spin. Heavier attack with a slightly longer settle than a standard stop. Dense wood, low metal resonance. Marks resolution without revealing whether the result is a win. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.4 s",
+          "tags": [
+            "rodillo",
+            "resolucion",
+            "final"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Rueda de ruleta",
+          "texto": "3.0 seconds. Roulette wheel spinning and gradually slowing. Smooth continuous rotation with decreasing speed. Polished wood rim, brass bearing, light air friction. Establishes a real physical event in motion. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "3.0 s",
+          "tags": [
+            "ruleta",
+            "rueda",
+            "friccion"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Bola sobre pista (loop)",
+          "texto": "4.0 seconds seamless loop. Roulette ball rolling along the wooden track. Continuous high rolling tone with irregular light contacts. Ivory ball on lacquered wood, brass frets. Sustains anticipation without indicating an outcome. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "4.0 s",
+          "tags": [
+            "ruleta",
+            "bola",
+            "loop",
+            "anticipacion"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Bola cayendo en casilla",
+          "texto": "1.0 seconds. Roulette ball dropping and settling into a numbered pocket. Several irregular bounces resolving into a final rest. Ivory ball against brass dividers and wood. Marks a definitive, irreversible result. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "1.0 s",
+          "tags": [
+            "ruleta",
+            "bola",
+            "rebote",
+            "resolucion"
+          ],
+          "categoria_prefijo": "MEC"
+        }
+      ]
+    },
+    {
+      "categoria": "Mecánicas: contadores y resolución",
+      "template": "sfx",
+      "profile": "dry",
+      "reglas": "Los contadores acompañan el ascenso sin celebrarlo: la celebración es del stinger. Un fin de ronda sin premio no debe sonar a derrota, porque el jugador vuelve a jugar de inmediato.",
+      "prompts": [
+        {
+          "nombre": "Contador de premio (loop)",
+          "texto": "1.0 seconds seamless loop. Win amount counter ticking upward after a winning round. Rapid even ticks with a light bright edge. Small metal coins and glass chimes. Conveys accumulating value with steady momentum. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "1.0 s",
+          "tags": [
+            "contador",
+            "loop",
+            "premio",
+            "monedas"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Cierre de contador",
+          "texto": "0.5 seconds. Win counter reaching its final amount. Ticking resolves into a single bright confirming accent. Metal coin and clean bell. Confirms the total is settled. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.5 s",
+          "tags": [
+            "contador",
+            "cierre",
+            "total"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Ronda sin premio",
+          "texto": "0.3 seconds. Round ending with no win. Short neutral descending settle with no tail. Soft wood and muted low tone. Closes the round calmly, neither disappointing nor rewarding. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.3 s",
+          "tags": [
+            "sin premio",
+            "cierre",
+            "neutro"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Reinicio de ronda",
+          "texto": "0.5 seconds. Interface resetting to the betting state after a round. Short reverse swell settling into a neutral tone. Filtered air and clean synth pad. Invites a new round without urgency. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.5 s",
+          "tags": [
+            "reset",
+            "ronda",
+            "transicion"
+          ],
+          "categoria_prefijo": "MEC"
+        }
+      ]
+    },
+    {
+      "categoria": "Tensión y anticipación",
+      "template": "sfx",
+      "profile": "dry",
+      "reglas": "La tensión se construye con movimiento, no con volumen: pitch ascendente, aceleración de pulso o densidad creciente. Nunca recursos de terror. Debe crear expectación sin prometer el resultado, y no puede empezar ya intensa.",
+      "prompts": [
+        {
+          "nombre": "Anticipación ascendente",
+          "texto": "3.0 seconds. Scatter anticipation while the final reel spins. Slow continuous rise with accelerating internal pulse. Bowed metal, filtered noise sweep, light percussion ticks. Builds expectation without indicating whether the feature will trigger. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "3.0 s",
+          "tags": [
+            "scatter",
+            "tension",
+            "ascendente",
+            "anticipacion"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Presión de riesgo (loop sutil)",
+          "texto": "4.0 seconds seamless loop. Low tension bed during a rising multiplier. Sparse slow pulses with wide spacing. Filtered radar blips and subtle metallic shimmer. Adds a low, steady unease. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "4.0 s",
+          "tags": [
+            "tension",
+            "loop",
+            "riesgo",
+            "crash"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Presión alta (loop denso)",
+          "texto": "4.0 seconds seamless loop. High tension bed at a high multiplier. Dense fast pulses with rising internal pressure. Sharp radar ticks, tight metallic resonance, filtered noise sweep. Communicates imminent risk. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "4.0 s",
+          "tags": [
+            "tension",
+            "loop",
+            "alto",
+            "crash"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Cuenta regresiva",
+          "texto": "0.4 seconds. Countdown beep before betting closes. Single clean pulse with a short digital tail. Sine-based synth tone with light noise edge. Urgent but calm, warns without alarming. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.4 s",
+          "tags": [
+            "ui",
+            "cuenta",
+            "alerta"
+          ],
+          "categoria_prefijo": "UI"
+        }
+      ]
+    },
+    {
+      "categoria": "Impactos y eventos",
+      "template": "sfx",
+      "profile": "dry",
+      "reglas": "Describir la naturaleza física del impacto y su cola. Un cierre dramático no debe ser agresivo: cierra la ronda, no castiga al jugador.",
+      "prompts": [
+        {
+          "nombre": "Despegue / arranque energético",
+          "texto": "1.2 seconds. Round launch as the multiplier starts rising. Sharp ignition burst opening into sustained thrust. Plasma discharge, compressed air, low engine body. Signals commitment and forward motion. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "1.2 s",
+          "tags": [
+            "despegue",
+            "inicio",
+            "crash"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Motor en vuelo (loop)",
+          "texto": "4.0 seconds seamless loop. Engine sustaining flight during a round. Steady drone with slow harmonic movement, no rhythmic pulse. Plasma energy, filtered noise, low synth body. Sustains steady momentum. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "4.0 s",
+          "tags": [
+            "motor",
+            "loop",
+            "vuelo"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Ruptura / crash",
+          "texto": "1.8 seconds. Multiplier crash ending the round. Abrupt rupture followed by a short debris tail and fast decay. Energy discharge, glass fracture, filtered low impact. Definitive and dry, closing the round without punishing the player. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "1.8 s",
+          "tags": [
+            "crash",
+            "ruptura",
+            "cierre"
+          ],
+          "categoria_prefijo": "FX"
+        }
+      ]
+    },
+    {
+      "categoria": "Símbolos y personajes",
+      "template": "sfx",
+      "profile": "dry",
+      "reglas": "Un símbolo especial debe destacar sobre la mezcla sin leerse como premio: la celebración llega después, en el stinger. Sin voces humanas ni habla, por defecto.",
+      "prompts": [
+        {
+          "nombre": "Aparición de WILD",
+          "texto": "1.2 seconds. WILD symbol landing on the reels. Sharp attack opening into a bright sparkle and quick close. Carved stone, gold leaf, small bells. Draws attention to a valuable symbol without reading as a win. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "1.2 s",
+          "tags": [
+            "wild",
+            "simbolo",
+            "destello"
+          ],
+          "categoria_prefijo": "SYM"
+        },
+        {
+          "nombre": "Aparición de SCATTER",
+          "texto": "1.5 seconds. SCATTER symbol landing and locking on the reels. Weighted impact opening into a resonant metallic bloom. Struck bronze, stone, distant chime tail. Marks a rare symbol and raises expectation for the feature. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "1.5 s",
+          "tags": [
+            "scatter",
+            "simbolo",
+            "bonus"
+          ],
+          "categoria_prefijo": "SYM"
+        },
+        {
+          "nombre": "Reacción de mascota",
+          "texto": "1.0 seconds. Game mascot reacting to a positive event on screen. Short expressive gesture with a quick bright tail. Small animal-like tonal chirps, wooden percussion accent. Adds personality without becoming a reward sound. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "1.0 s",
+          "tags": [
+            "mascota",
+            "personaje",
+            "reaccion"
+          ],
+          "categoria_prefijo": "SYM"
+        }
+      ]
+    },
+    {
+      "categoria": "Premios y stingers",
+      "template": "stinger",
+      "profile": "spatial",
+      "reglas": "La jerarquía debe ser audible: un premio menor no puede parecerse a un Grand Win. Escalar mediante impacto, monedas, brillo, melodía, duración, registro grave y amplitud estéreo. Instrumentación concreta, nunca \"música alegre\".",
+      "prompts": [
+        {
+          "nombre": "Premio menor",
+          "texto": "0.9 seconds. Small line win stinger. Light impact followed by a brief three-note lift and quick close. Soft mallets, small coins, gentle bell. Rewards without interrupting the pace of play. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+          "duracion": "0.9 s",
+          "tags": [
+            "premio",
+            "menor",
+            "nivel 1"
+          ],
+          "categoria_prefijo": "STG"
+        },
+        {
+          "nombre": "Premio medio",
+          "texto": "2.2 seconds. Medium win stinger. Solid impact, coin shower, short brass motif, controlled ending. Brass section, cascading metal coins, low drum. Clear escalation over a small win, with casino readability. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+          "duracion": "2.2 s",
+          "tags": [
+            "premio",
+            "medio",
+            "nivel 2"
+          ],
+          "categoria_prefijo": "STG"
+        },
+        {
+          "nombre": "Premio grande",
+          "texto": "3.0 seconds. Big win resolution stinger. Heavy impact, sustained coin cascade, rising brass motif, controlled final close. Gold coins, brass section, low taiko, temple bells. Major celebration with strong casino readability and clear hierarchy above a medium win. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+          "duracion": "3.0 s",
+          "tags": [
+            "premio",
+            "grande",
+            "bigwin",
+            "nivel 3"
+          ],
+          "categoria_prefijo": "STG"
+        },
+        {
+          "nombre": "Cobro estándar",
+          "texto": "1.0 seconds. Standard cashout confirmation. Crisp impact followed by a short bright coin accent and clean close. Metal coins, register mechanism, clean synth chime. Rewards a timely decision with immediate satisfaction. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+          "duracion": "1.0 s",
+          "tags": [
+            "cashout",
+            "cobro",
+            "crash"
+          ],
+          "categoria_prefijo": "STG"
+        },
+        {
+          "nombre": "Cobro alto",
+          "texto": "2.5 seconds. High multiplier cashout. Heavy impact, sustained coin cascade, short triumphant synth motif, controlled ending. Metal coins, brass-like synth, deep low end. Clear escalation with strong casino readability. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+          "duracion": "2.5 s",
+          "tags": [
+            "cashout",
+            "grande",
+            "crash"
+          ],
+          "categoria_prefijo": "STG"
+        },
+        {
+          "nombre": "Transición a bonus",
+          "texto": "3.0 seconds. Transition stinger entering a bonus screen. Rising sweep, mid impact, short thematic motif, decisive close. Harp glissando, drum roll, brass swell. Marks a change of scene and raises energy for the new mode. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+          "duracion": "3.0 s",
+          "tags": [
+            "transicion",
+            "bonus",
+            "stinger"
+          ],
+          "categoria_prefijo": "STG"
+        },
+        {
+          "nombre": "Cierre de derrota",
+          "texto": "1.2 seconds. Round lost at a casino table. Soft descending two-note settle with a short close. Muted low brass and damped wood. Closes the round respectfully, inviting another hand. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+          "duracion": "1.2 s",
+          "tags": [
+            "derrota",
+            "cierre",
+            "respetuoso"
+          ],
+          "categoria_prefijo": "STG"
+        }
+      ]
+    },
+    {
+      "categoria": "Música y ambientes",
+      "template": "bgm",
+      "profile": "musical",
+      "reglas": "Siempre \"seamless loop\" y con la instrumentación explícita. La BGM acompaña: debe dejar despejado el rango medio para UI, mecánicas y premios. Nunca aplicar reverb cero a música o ambiente.",
+      "prompts": [
+        {
+          "nombre": "Juego base (orgánico)",
+          "texto": "Base game background music. 60.0 seconds seamless loop. Mid-tempo instrumental bed with light percussion and warm harmonic pad. Acoustic guitar, marimba, soft strings, brushed percussion. Soft dynamics with rounded attacks. [THEME]. Clean, uncluttered upper mids. Instrumental only, no vocals, no chants, polished game-ready mix, controlled low end, clean loop transition.",
+          "duracion": "60.0 s",
+          "tags": [
+            "bgm",
+            "loop",
+            "base",
+            "organico"
+          ],
+          "categoria_prefijo": "BGM"
+        },
+        {
+          "nombre": "Modo bonus (energía alta)",
+          "texto": "Free spins mode music. 60.0 seconds seamless loop. Faster tempo with driving percussion and a recurring melodic hook. Brass section, marimba, hand drums, shaker. High energy, with rounded brass and no harsh highs. [THEME]. Clean, uncluttered upper mids. Instrumental only, no vocals, no chants, polished game-ready mix, controlled low end, clean loop transition.",
+          "duracion": "60.0 s",
+          "tags": [
+            "bgm",
+            "loop",
+            "freespins",
+            "energia"
+          ],
+          "categoria_prefijo": "BGM"
+        },
+        {
+          "nombre": "Espera (contenida)",
+          "texto": "Background music for waiting phases between rounds. 60.0 seconds seamless loop. Sparse mid-tempo bed with slow evolving movement. Analog synth pad, subtle arpeggio, restrained low pulse. Gentle, constant motion. [THEME]. Clean, uncluttered upper mids. Instrumental only, no vocals, no chants, polished game-ready mix, controlled low end, clean loop transition.",
+          "duracion": "60.0 s",
+          "tags": [
+            "bgm",
+            "loop",
+            "espera",
+            "synth"
+          ],
+          "categoria_prefijo": "BGM"
+        },
+        {
+          "nombre": "Ambiente de sala",
+          "texto": "Casino floor ambience behind a table game. 60.0 seconds seamless loop. Distant sparse activity with no distinguishable events. Muffled room tone, faint distant chimes, soft air movement. Creates a sense of place, distant and diffuse. [THEME]. No music, no melody, no vocals, no chants, polished game-ready mix, controlled low end, clean loop transition.",
+          "duracion": "60.0 s",
+          "tags": [
+            "ambiente",
+            "sala",
+            "loop",
+            "fondo"
+          ],
+          "categoria_prefijo": "AMB"
+        }
+      ]
+    },
+    {
+      "categoria": "Papel, tela y cartas",
+      "template": "sfx",
+      "profile": "dry",
+      "reglas": "La fricción es el elemento central: nombrar siempre la superficie sobre la que se desliza el papel. Un naipe sobre fieltro y uno sobre madera son sonidos distintos.",
+      "prompts": [
+        {
+          "nombre": "Barajado de mazo",
+          "texto": "1.8 seconds. Dealer shuffling a deck of cards. Riffle friction followed by a bridge release and a final tap. Coated paper cards on felt. Signals the start of a fresh hand. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "1.8 s",
+          "tags": [
+            "cartas",
+            "barajar",
+            "friccion"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Reparto de carta",
+          "texto": "0.3 seconds. Single card dealt onto the table. Quick friction sweep ending in a soft landing. Coated paper sliding on felt cloth. Neutral physical feedback per card. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.3 s",
+          "tags": [
+            "cartas",
+            "repartir",
+            "deslizar"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Revelado de carta",
+          "texto": "0.5 seconds. Dealer flipping the face-down card. Crisp snap opening into a short settle. Stiff coated paper against felt. Creates a decisive suspenseful beat without revealing the outcome. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.5 s",
+          "tags": [
+            "cartas",
+            "revelar",
+            "suspenso"
+          ],
+          "categoria_prefijo": "MEC"
+        },
+        {
+          "nombre": "Rastrillo sobre el paño",
+          "texto": "0.4 seconds. Croupier sweeping chips off the betting layout. Continuous fabric friction with scattered plastic contacts. Wooden rake on felt, clay chips. Communicates the table being cleared. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+          "duracion": "0.4 s",
+          "tags": [
+            "fichas",
+            "limpiar",
+            "friccion"
+          ],
+          "categoria_prefijo": "MEC"
+        }
+      ]
+    },
+    {
+      "categoria": "Capas aisladas (stems)",
+      "template": "stem",
+      "profile": "dry",
+      "reglas": "Una capa cubre UN rol de frecuencia y nada más. Se pide aislada, sin melodía ni monedas salvo que ese sea su rol. Un premio grande suele descomponerse en impacto, graves, monedas, tema y cierre: entre dos y cinco capas. La plantilla de stem NO lleva identidad temática, con una excepción: la capa temática, cuyo rol es precisamente portarla.",
+      "prompts": [
+        {
+          "nombre": "Capa de impacto",
+          "texto": "1.0 seconds. Isolated impact layer for a big win event. Single sharp transient with fast controlled decay. Struck metal plate and compressed air burst. Provides the initial hit and nothing else. No melody, no coins, no voice, clean, isolated, completely dry, zero reverb.",
+          "duracion": "1.0 s",
+          "tags": [
+            "stem",
+            "impacto",
+            "capa"
+          ],
+          "categoria_prefijo": "STG"
+        },
+        {
+          "nombre": "Capa de graves",
+          "texto": "2.0 seconds. Isolated low frequency layer for a big win event. Deep sustained swell with slow decay. Taiko drum body and low sine weight. Occupies the sub and low range only, no midrange content. No melody, no coins, no voice, clean, isolated, completely dry, zero reverb.",
+          "duracion": "2.0 s",
+          "tags": [
+            "stem",
+            "graves",
+            "capa",
+            "low"
+          ],
+          "categoria_prefijo": "STG"
+        },
+        {
+          "nombre": "Capa de monedas",
+          "texto": "4.0 seconds. Isolated coin layer for a big win event. Continuous dense metallic shower with irregular density. Gold coins falling on hard surface. Occupies the high frequency range, no melodic content. No melody, no coins, no voice, clean, isolated, completely dry, zero reverb.",
+          "duracion": "4.0 s",
+          "tags": [
+            "stem",
+            "monedas",
+            "capa",
+            "brillo"
+          ],
+          "categoria_prefijo": "STG"
+        },
+        {
+          "nombre": "Capa temática",
+          "texto": "4.0 seconds. Isolated melodic layer for a big win event. Rising four-note motif with sustained resolution. Brass section and tuned bells. Carries the thematic identity in the midrange. [THEME]. No percussion, no coins, no voice, clean, isolated, completely dry, zero reverb.",
+          "duracion": "4.0 s",
+          "tags": [
+            "stem",
+            "melodia",
+            "capa",
+            "tema"
+          ],
+          "categoria_prefijo": "STG"
+        },
+        {
+          "nombre": "Capa de cierre",
+          "texto": "1.5 seconds. Isolated ending layer for a big win event. Final accent with a controlled fade to silence. Suspended cymbal and low struck metal. Closes the event cleanly. No melody, no coins, no voice, clean, isolated, completely dry, zero reverb.",
+          "duracion": "1.5 s",
+          "tags": [
+            "stem",
+            "cierre",
+            "capa",
+            "ending"
+          ],
+          "categoria_prefijo": "STG"
+        }
+      ]
+    }
+  ],
+  "templates": {
+    "Slot": [
+      {
+        "id": "001",
+        "official_filename": "BGM_base_game.wav",
+        "category": "BGM",
+        "subtype": "base",
+        "game_event": "base_game_loop",
+        "usage": "Durante el juego base",
+        "objective": "Sostener la ambientación dejando espacio a la mecánica",
+        "duration_seconds": "60.0",
+        "priority": "high",
+        "loop": true,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "musical",
+        "prompt": "Base game bed in an atmospheric setting. 60.0 seconds seamless loop. Mid-tempo instrumental groove with a steady pulse. Warm harmonic bed, crisp acoustic percussion and subtle bass pulse. [THEME]. Clean, uncluttered upper mids. Instrumental only, no vocals, no chants, polished game-ready mix, controlled low end, clean loop transition.",
+        "notes": "El prompt debe anclarse a la escena visual y su instrumentación (03_PROMPT_ENGINEERING §12)."
+      },
+      {
+        "id": "002",
+        "official_filename": "BGM_modal.wav",
+        "category": "BGM",
+        "subtype": "modal",
+        "game_event": "modal_music",
+        "usage": "Bajo todos los paneles modales y carteles de premio",
+        "objective": "Fondo musical único y compartido para todos los modales del juego (07_MODAL_ARCHITECTURE)",
+        "duration_seconds": "30.0",
+        "priority": "high",
+        "loop": true,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "musical",
+        "prompt": "Instrumental casino slot win music. 30.0 seconds seamless loop. High-energy celebratory groove from the very first beat, never resolving. Bright struck bells above 4 kHz, solid rhythmic low end below 1 kHz, leaving the 1 to 4 kHz range completely open for sound effects. [THEME]. Instrumental only, no vocals, no chants, polished game-ready mix, controlled low end, clean loop transition.",
+        "notes": "Cama única para todos los modales. La música del juego se pausa al abrir (07_MODAL_ARCHITECTURE)."
+      },
+      {
+        "id": "003",
+        "official_filename": "BGM_freespins.wav",
+        "category": "BGM",
+        "subtype": "feature",
+        "game_event": "freespins_loop",
+        "usage": "Durante el modo de tiradas gratis",
+        "objective": "Elevar la energía y la emoción sobre el juego base",
+        "duration_seconds": "60.0",
+        "priority": "high",
+        "loop": true,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "musical",
+        "prompt": "Free spins mode background music. 60.0 seconds seamless loop. Higher tempo driving groove with heightened tension and celebratory pulse. Dynamic rhythm section, forward momentum, clean mix. [THEME]. Clean, uncluttered upper mids. Instrumental only, no vocals, no chants, polished game-ready mix, controlled low end, clean loop transition.",
+        "notes": "Eleva el ritmo sin fatigar."
+      },
+      {
+        "id": "004",
+        "official_filename": "UI_click.wav",
+        "category": "UI",
+        "subtype": "button",
+        "game_event": "click",
+        "usage": "Cualquier botón de la interfaz que no sea el de jugar",
+        "objective": "Confirmación táctil neutra y corta, tolerante a repetición",
+        "duration_seconds": "0.1",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.1 seconds. Generic interface button click. Instant sharp attack with immediate stop. Small polished wood and light composite contact. Confirms action without suggesting reward. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Cubre cambios de apuesta, menús y ajustes (06_SCOPE_POLICY)."
+      },
+      {
+        "id": "005",
+        "official_filename": "UI_click_play.wav",
+        "category": "UI",
+        "subtype": "button",
+        "game_event": "click_play",
+        "usage": "El jugador pulsa el botón principal de giro",
+        "objective": "Confirmación táctil con mayor peso que un click ordinario",
+        "duration_seconds": "0.2",
+        "priority": "high",
+        "loop": false,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.2 seconds. Main spin button press in a slot game interface. Fast snappy attack, short tactile body, immediate stop. Dense wood and heavy mechanical contact. Confirms the round start, strictly neutral in value. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Latencia mínima. No debe sonar como premio."
+      },
+      {
+        "id": "006",
+        "official_filename": "MEC_reel_start.wav",
+        "category": "MEC",
+        "subtype": "reel",
+        "game_event": "reel_start",
+        "usage": "Arranque físico de los rodillos tras pulsar girar",
+        "objective": "Marcar el comienzo del movimiento mecánico",
+        "duration_seconds": "0.4",
+        "priority": "high",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.4 seconds. Slot reels starting to spin. Quick mechanical release accelerating into rotation. Wooden drum, metal axle release, light air rush. Signals that the round is in motion. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Encadena con MEC_reel_spin."
+      },
+      {
+        "id": "007",
+        "official_filename": "MEC_reel_end.wav",
+        "category": "MEC",
+        "subtype": "reel",
+        "game_event": "reel_end",
+        "usage": "Parada y bloqueo de un rodillo en su posición",
+        "objective": "Marcar la detención física con precisión",
+        "duration_seconds": "0.2",
+        "priority": "high",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.2 seconds. Slot reel locking into position. Sharp solid attack with a damped body and immediate stop. Solid wood block hitting a padded stop. Communicates a settled result, strictly neutral. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Aplicar variación de tono por rodillo en el motor."
+      },
+      {
+        "id": "008",
+        "official_filename": "SYM_symbol_match.wav",
+        "category": "SYM",
+        "subtype": "line_win",
+        "game_event": "symbol_match",
+        "usage": "Una combinación ganadora se ilumina en los rodillos",
+        "objective": "Destacar la línea de pago ganadora de forma ágil",
+        "duration_seconds": "0.3",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.3 seconds. Winning symbol combination connecting on a payline. Crisp bright accent with a fast sparkle and immediate cutoff. Clean crystal ping and light gold chime. Rewards clearly without stalling the round. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Ágil y limpio."
+      },
+      {
+        "id": "009",
+        "official_filename": "STG_big_win.wav",
+        "category": "STG",
+        "subtype": "win_modal",
+        "game_event": "big_win",
+        "usage": "Cartel de Big Win (Nivel 1 de premio mayor)",
+        "objective": "Celebración inicial de premio con impacto y cascada de monedas",
+        "duration_seconds": "3.0",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "3.0 seconds. Big win celebration in a slot modal. Heavy impact landing followed by bright coin shower and ringing casino bells. No melody, no musical motif: the music comes from a separate bed. Clean game-ready impact. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Cuerpo de 3 s máximo (01_GLOBAL_AUDIO_RULES §10). Sin melodía propia (07_MODAL_ARCHITECTURE)."
+      },
+      {
+        "id": "010",
+        "official_filename": "STG_mega_win.wav",
+        "category": "STG",
+        "subtype": "win_modal",
+        "game_event": "mega_win",
+        "usage": "Cartel de Mega Win (Nivel 2 de premio mayor)",
+        "objective": "Escalar sobre Big Win con más monedas y campanas",
+        "duration_seconds": "3.0",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "3.0 seconds. Mega win celebration in a slot modal. Massive dual impact followed by an accelerating cascade of gold coins and resonant bells. No melody, no musical motif: the music comes from a separate bed. Audible escalation over big win. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Cuerpo de 3 s máximo. Escala por densidad de materiales, no por volumen."
+      },
+      {
+        "id": "011",
+        "official_filename": "STG_super_mega_win.wav",
+        "category": "STG",
+        "subtype": "win_modal",
+        "game_event": "super_mega_win",
+        "usage": "Cartel de Super Mega Win (Nivel 3 de premio mayor)",
+        "objective": "Escalar con fuegos de metal y máximo brillo",
+        "duration_seconds": "3.0",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "3.0 seconds. Super mega win celebration in a slot modal. Thunderous initial impact with cascading gold coin avalanche and sparkling glockenspiel chimes. No melody, no musical motif: the music comes from a separate bed. Intense casino celebration. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Cuerpo de 3 s máximo."
+      },
+      {
+        "id": "012",
+        "official_filename": "STG_epic_win.wav",
+        "category": "STG",
+        "subtype": "win_modal",
+        "game_event": "epic_win",
+        "usage": "Cartel de Epic Win (Nivel 4 de premio mayor)",
+        "objective": "Máximo nivel de celebración de premio",
+        "duration_seconds": "3.0",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "3.0 seconds. Epic win supreme payout in a slot modal. Tremendous sub impact releasing an immense torrent of gold coins, sparkling bells and celebratory fireworks crackle. No melody, no musical motif: the music comes from a separate bed. Highest tier celebration. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Cuerpo de 3 s máximo."
+      },
+      {
+        "id": "013",
+        "official_filename": "STG_freespins_start.wav",
+        "category": "STG",
+        "subtype": "feature",
+        "game_event": "freespins_start",
+        "usage": "Cartel de entrada a Free Spins",
+        "objective": "Celebrar el inicio de la ronda de giros gratis",
+        "duration_seconds": "2.5",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "2.5 seconds. Transition into free spins feature. Rising energetic sweep resolving into an exciting accent hit. Bright chime glissando, low cinematic boom and resonant brass burst. Announces the feature with anticipation. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Pasa a BGM_freespins."
+      },
+      {
+        "id": "014",
+        "official_filename": "STG_freespins_end.wav",
+        "category": "STG",
+        "subtype": "feature",
+        "game_event": "freespins_end",
+        "usage": "Cartel de resumen y salida de Free Spins",
+        "objective": "Celebrar el total ganado y devolver al juego base",
+        "duration_seconds": "2.0",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "2.0 seconds. Free spins completion and total win display. Warm affirmative impact settling into a satisfying payout chime. Soft brass resolve and pleasant coin cascade. Closes the bonus mode cleanly. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Vuelve a BGM_base_game."
+      },
+      {
+        "id": "015",
+        "official_filename": "MEC_reel_spin.wav",
+        "category": "MEC",
+        "subtype": "reel",
+        "game_event": "reel_spin",
+        "usage": "Mientras los rodillos giran",
+        "objective": "Sostener el movimiento de los rodillos sin fatigar",
+        "duration_seconds": "2.0",
+        "priority": "high",
+        "loop": true,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "2.0 seconds seamless loop. Slot reels spinning continuously. Smooth steady rolling clicks with even mechanical rhythm. Wooden drum, well-oiled gears, soft air friction. Sustains continuous motion with soft click edges. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Es el loop más repetido del juego: debe ser neutro y cómodo."
+      },
+      {
+        "id": "016",
+        "official_filename": "MEC_win_increase.wav",
+        "category": "MEC",
+        "subtype": "counter",
+        "game_event": "win_increase",
+        "usage": "Mientras el contador de premio asciende",
+        "objective": "Acompañar la subida de números con sensación de acumulación",
+        "duration_seconds": "1.0",
+        "priority": "high",
+        "loop": true,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "1.0 seconds seamless loop. Win counter tallying upward rapidly. Fast even coin clicks with a bright metallic edge. Polished coins and light glass chimes. Conveys rising value with steady momentum. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "La frecuencia y densidad pueden modularse en el motor."
+      },
+      {
+        "id": "017",
+        "official_filename": "SYM_wild_land.wav",
+        "category": "SYM",
+        "subtype": "wild",
+        "game_event": "wild_land",
+        "usage": "Aparece el símbolo WILD en el tablero",
+        "objective": "Destacar el comodín sin leerse como premio",
+        "duration_seconds": "1.0",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "1.0 seconds. WILD symbol landing on the reels. Sharp attack opening into a bright sparkle and quick close. Struck metal and small bells. Draws attention to a valuable symbol without reading as a win. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Destaca sobre la mezcla, pero la celebración es del stinger."
+      },
+      {
+        "id": "018",
+        "official_filename": "SYM_scatter_land.wav",
+        "category": "SYM",
+        "subtype": "scatter",
+        "game_event": "scatter_land",
+        "usage": "Aparece un símbolo SCATTER",
+        "objective": "Marcar un símbolo raro y elevar la expectativa",
+        "duration_seconds": "1.3",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "1.3 seconds. SCATTER symbol landing and locking on the reels. Weighted impact opening into a resonant metallic bloom. Struck bronze and distant chime tail. Marks a rare symbol and raises expectation for the feature. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Escala con el número de scatters."
+      },
+      {
+        "id": "019",
+        "official_filename": "STG_bonus_trigger.wav",
+        "category": "STG",
+        "subtype": "feature",
+        "game_event": "bonus_trigger",
+        "usage": "Se activa la función de bonus",
+        "objective": "Celebrar la activación y separarla de la intro del modo",
+        "duration_seconds": "2.0",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "2.0 seconds. Bonus feature triggering after the final scatter lands. Strong impact opening into a rising motif with a decisive close. Brass, struck metal and bright bells. Celebrates the trigger itself, before the mode begins. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Riesgo del perfil: no mezclar el trigger con la intro de free spins."
+      }
+    ],
+    "Crash": [
+      {
+        "id": "001",
+        "official_filename": "UI_bet_confirm.wav",
+        "category": "UI",
+        "subtype": "confirm",
+        "game_event": "bet_confirm",
+        "usage": "El jugador confirma su apuesta antes de la ronda",
+        "objective": "Confirmar el compromiso de la apuesta",
+        "duration_seconds": "0.2",
+        "priority": "high",
+        "loop": false,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.2 seconds. Bet confirmation before a crash round starts. Firm click resolving into a short digital affirmation. Hard plastic key and clean synth tone. Communicates a committed decision. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Debe distinguirse de los steppers de apuesta."
+      },
+      {
+        "id": "002",
+        "official_filename": "UI_auto_cashout_toggle.wav",
+        "category": "UI",
+        "subtype": "toggle",
+        "game_event": "auto_cashout_toggle",
+        "usage": "El jugador activa el cobro automático",
+        "objective": "Indicar cambio de estado binario",
+        "duration_seconds": "0.1",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.1 seconds. Auto cashout toggle in a crash game interface. Instant switch click with a tiny synthetic tail. Small mechanical switch and digital blip. Neutral state change indicator. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Variante descendente para desactivar."
+      },
+      {
+        "id": "003",
+        "official_filename": "UI_round_countdown.wav",
+        "category": "UI",
+        "subtype": "countdown",
+        "game_event": "round_countdown",
+        "usage": "Últimos segundos antes del cierre de apuestas",
+        "objective": "Advertir del cierre sin generar pánico",
+        "duration_seconds": "0.4",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.4 seconds. Countdown beep before betting closes in a crash round. Single clean pulse with a short digital tail. Sine-based synth tone with light noise edge. Urgent but calm, warns without alarming. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Se dispara 3 veces con pitch ascendente controlado desde el motor."
+      },
+      {
+        "id": "004",
+        "official_filename": "MEC_launch.wav",
+        "category": "MEC",
+        "subtype": "start",
+        "game_event": "round_launch",
+        "usage": "Arranque de la ronda y despegue",
+        "objective": "Marcar el inicio del ascenso con energía",
+        "duration_seconds": "1.2",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "1.2 seconds. Round launch as the multiplier starts rising. Sharp ignition burst opening into sustained thrust. Plasma discharge, compressed air, low engine body. Signals commitment and forward motion. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Debe encadenar sin corte con MEC_multiplier_loop."
+      },
+      {
+        "id": "005",
+        "official_filename": "MEC_multiplier_loop.wav",
+        "category": "MEC",
+        "subtype": "ascent",
+        "game_event": "multiplier_rising",
+        "usage": "Mientras el multiplicador asciende",
+        "objective": "Sostener el ascenso sin fatigar en rondas largas",
+        "duration_seconds": "4.0",
+        "priority": "high",
+        "loop": true,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "4.0 seconds seamless loop. Multiplier rising continuously during a crash round. Steady engine drone with slow harmonic movement, no rhythmic pulse. Plasma energy, filtered noise, low synth body. Sustains steady momentum. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "El pitch sube desde el motor según el multiplicador. Riesgo del perfil: loop fatigante."
+      },
+      {
+        "id": "006",
+        "official_filename": "MEC_tension_low.wav",
+        "category": "MEC",
+        "subtype": "tension",
+        "game_event": "tension_layer_low",
+        "usage": "Capa de tensión en multiplicadores medios",
+        "objective": "Introducir inquietud sin saturar",
+        "duration_seconds": "4.0",
+        "priority": "medium",
+        "loop": true,
+        "source_group": "project_skin",
+        "single_or_stems": "stems",
+        "technical_profile": "dry",
+        "prompt": "4.0 seconds seamless loop. Isolated low tension layer for a rising multiplier. Sparse slow pulses with wide spacing. Filtered radar blips and subtle metallic shimmer. Adds a low, steady unease. [THEME]. No melody, no coins, no voice, clean, isolated, completely dry, zero reverb.",
+        "notes": "Capa aditiva sobre MEC_multiplier_loop. Riesgo del perfil: tensión intensa desde el inicio."
+      },
+      {
+        "id": "007",
+        "official_filename": "MEC_tension_high.wav",
+        "category": "MEC",
+        "subtype": "tension",
+        "game_event": "tension_layer_high",
+        "usage": "Capa de tensión en multiplicadores altos",
+        "objective": "Elevar la presión en la zona de riesgo",
+        "duration_seconds": "4.0",
+        "priority": "high",
+        "loop": true,
+        "source_group": "project_skin",
+        "single_or_stems": "stems",
+        "technical_profile": "dry",
+        "prompt": "4.0 seconds seamless loop. Isolated high tension layer for a high multiplier. Dense fast pulses with rising internal pressure. Sharp radar ticks, tight metallic resonance, filtered noise sweep. Communicates imminent risk. [THEME]. No melody, no coins, no voice, clean, isolated, completely dry, zero reverb.",
+        "notes": "Se suma a la capa baja, no la sustituye."
+      },
+      {
+        "id": "008",
+        "official_filename": "STG_cashout.wav",
+        "category": "STG",
+        "subtype": "cashout",
+        "game_event": "cashout",
+        "usage": "El jugador cobra su apuesta",
+        "objective": "Recompensar la decisión con satisfacción inmediata",
+        "duration_seconds": "1.0",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "1.0 seconds. Standard cashout confirmation in a crash game. Crisp impact followed by a short bright coin accent and clean close. Metal coins, register mechanism, clean synth chime. Rewards a timely decision with immediate satisfaction. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Nivel 1 de cashout. Riesgo del perfil: un cashout pequeño no debe sonar a jackpot."
+      },
+      {
+        "id": "009",
+        "official_filename": "STG_big_cashout.wav",
+        "category": "STG",
+        "subtype": "cashout",
+        "game_event": "big_cashout",
+        "usage": "El jugador cobra un multiplicador alto",
+        "objective": "Escalar audiblemente sobre el cashout normal",
+        "duration_seconds": "2.5",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "stems",
+        "technical_profile": "spatial",
+        "prompt": "2.5 seconds. High multiplier cashout in a crash game. Heavy impact, sustained coin cascade, short triumphant synth motif, controlled ending. Metal coins, brass-like synth, deep low end. Clear escalation with strong casino readability. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Candidato a capas: impact / low / coins / theme / ending."
+      },
+      {
+        "id": "010",
+        "official_filename": "FX_crash.wav",
+        "category": "FX",
+        "subtype": "crash",
+        "game_event": "round_crash",
+        "usage": "El multiplicador se estrella y termina la ronda",
+        "objective": "Cerrar la ronda con contundencia, sin agresividad",
+        "duration_seconds": "1.8",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "1.8 seconds. Multiplier crash ending the round. Abrupt rupture followed by a short debris tail and fast decay. Energy discharge, glass fracture, filtered low impact. Definitive and dry, closing the round without punishing the player. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Riesgo del perfil: crash demasiado agresivo. Corta de inmediato los loops de tensión."
+      },
+      {
+        "id": "011",
+        "official_filename": "MEC_round_reset.wav",
+        "category": "MEC",
+        "subtype": "reset",
+        "game_event": "round_reset",
+        "usage": "La interfaz vuelve al estado de apuestas",
+        "objective": "Señalar que se puede apostar de nuevo",
+        "duration_seconds": "0.5",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.5 seconds. Interface resetting to the betting state after a round. Short reverse swell settling into a neutral tone. Filtered air and clean synth pad. Invites a new round without urgency. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Debe llegar después de que la cola de FX_crash haya caído."
+      },
+      {
+        "id": "012",
+        "official_filename": "UI_error.wav",
+        "category": "UI",
+        "subtype": "error",
+        "game_event": "action_error",
+        "usage": "Una acción no es posible (saldo, tiempo, límite)",
+        "objective": "Bloquear con claridad, sin castigar",
+        "duration_seconds": "0.3",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.3 seconds. Blocked action in a game interface. Short double low tone with immediate stop. Muted synth and soft plastic. Clearly signals refusal without harshness. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Debe ser inconfundible frente a las confirmaciones."
+      },
+      {
+        "id": "013",
+        "official_filename": "BGM_base_round.wav",
+        "category": "BGM",
+        "subtype": "base",
+        "game_event": "base_music",
+        "usage": "Espera entre rondas y ronda en curso",
+        "objective": "Mantener presencia dejando espacio a la tensión",
+        "duration_seconds": "60.0",
+        "priority": "medium",
+        "loop": true,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "musical",
+        "prompt": "Background music for crash game rounds and waiting phases. 60.0 seconds seamless loop. Sparse mid-tempo bed with slow evolving movement. Analog synth pad, subtle arpeggio, restrained low pulse. Gentle, constant motion. [THEME]. Clean, uncluttered upper mids. Instrumental only, no vocals, no chants, polished game-ready mix, controlled low end, clean loop transition.",
+        "notes": "Riesgo del perfil: no dejar espacio para UI. Mantener el rango medio despejado."
+      },
+      {
+        "id": "014",
+        "official_filename": "UI_bet_increase.wav",
+        "category": "UI",
+        "subtype": "stepper",
+        "game_event": "bet_increase",
+        "usage": "El jugador sube el importe de la apuesta",
+        "objective": "Comunicar incremento sin prometer premio",
+        "duration_seconds": "0.1",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.1 seconds. Bet amount increase step in a betting interface. Very short click with a slight upward pitch. Hard plastic key and clean synth edge. Indicates a rising value, strictly neutral. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Reutilizar con pitch descendente para bet_decrease."
+      },
+      {
+        "id": "015",
+        "official_filename": "MEC_multiplier_tick.wav",
+        "category": "MEC",
+        "subtype": "ascent",
+        "game_event": "multiplier_milestone",
+        "usage": "El multiplicador cruza un valor entero",
+        "objective": "Marcar el hito sin celebrarlo",
+        "duration_seconds": "0.2",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.2 seconds. Multiplier crossing a whole number during the ascent. Single short digital accent with immediate decay. Clean synth blip with light metallic edge. Marks a milestone without celebrating it: the round is not over. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Se dispara muchas veces por ronda: debe tolerar la repetición."
+      },
+      {
+        "id": "016",
+        "official_filename": "FX_near_miss.wav",
+        "category": "FX",
+        "subtype": "tension",
+        "game_event": "near_miss",
+        "usage": "El crash ocurre justo después de que el jugador dudara",
+        "objective": "Subrayar lo cerca que estuvo, sin castigar",
+        "duration_seconds": "1.0",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "1.0 seconds. Emphasis on a narrowly missed cashout. Short descending sweep with a hollow tail. Filtered noise and detuned synth. Underlines how close it was without punishing the player. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Opcional según el diseño. No debe sonar a burla."
+      },
+      {
+        "id": "017",
+        "official_filename": "UI_history_update.wav",
+        "category": "UI",
+        "subtype": "history",
+        "game_event": "history_update",
+        "usage": "El historial de rondas incorpora un resultado",
+        "objective": "Confirmar el registro sin robar atención",
+        "duration_seconds": "0.1",
+        "priority": "low",
+        "loop": false,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.1 seconds. New result entering the round history strip. Minimal soft tick with almost no tail. Light plastic contact. Confirms the record silently, well behind the main action. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Muy bajo en la mezcla: ocurre en cada ronda."
+      },
+      {
+        "id": "018",
+        "official_filename": "STG_round_win_summary.wav",
+        "category": "STG",
+        "subtype": "result",
+        "game_event": "round_summary",
+        "usage": "Pantalla de resumen tras cobrar",
+        "objective": "Cerrar la ronda ganada con calma",
+        "duration_seconds": "1.5",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "1.5 seconds. Summary screen after a successful cashout. Warm sustained chord with a clean resolution. Soft synth pad and light bell. Closes the round with satisfaction, calmer than the cashout itself. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Menos intenso que STG_cashout: es el cierre, no el momento."
+      }
+    ],
+    "CasinoTable": [
+      {
+        "id": "001",
+        "official_filename": "UI_chip_place.wav",
+        "category": "UI",
+        "subtype": "chip",
+        "game_event": "chip_place",
+        "usage": "El jugador coloca una ficha en el paño",
+        "objective": "Dar peso táctil a la apuesta",
+        "duration_seconds": "0.2",
+        "priority": "high",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.2 seconds. Casino chip placed on the betting layout. Short muted impact with a light clay edge. Clay chip on felt-covered table. Gives tactile weight to a bet, neutral in value. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Crear 3 variantes con pitch aleatorio para evitar fatiga."
+      },
+      {
+        "id": "002",
+        "official_filename": "UI_chip_stack.wav",
+        "category": "UI",
+        "subtype": "chip",
+        "game_event": "chip_stack",
+        "usage": "Se apilan varias fichas",
+        "objective": "Comunicar cantidad acumulada",
+        "duration_seconds": "0.3",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.3 seconds. Multiple casino chips stacking together. Rapid succession of clay contacts settling into stillness. Clay chips against each other on felt. Conveys accumulated quantity. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "La densidad puede escalar con el valor apostado."
+      },
+      {
+        "id": "003",
+        "official_filename": "MEC_wheel_spin.wav",
+        "category": "MEC",
+        "subtype": "wheel",
+        "game_event": "wheel_spin",
+        "usage": "La rueda de ruleta gira",
+        "objective": "Marcar el inicio del evento físico",
+        "duration_seconds": "3.0",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "3.0 seconds. Roulette wheel spinning and gradually slowing. Smooth continuous rotation with decreasing speed. Polished wood rim, brass bearing, light air friction. Establishes a real physical event in motion. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Riesgo del perfil: foley irreal. Evitar exageración cartoon."
+      },
+      {
+        "id": "004",
+        "official_filename": "MEC_ball_roll.wav",
+        "category": "MEC",
+        "subtype": "ball",
+        "game_event": "ball_rolling",
+        "usage": "La bola rueda por la pista",
+        "objective": "Sostener la anticipación del resultado",
+        "duration_seconds": "4.0",
+        "priority": "high",
+        "loop": true,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "4.0 seconds seamless loop. Roulette ball rolling along the wooden track. Continuous high rolling tone with irregular light contacts. Ivory ball on lacquered wood, brass frets. Sustains anticipation without indicating an outcome. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Los clicks se sincronizan con la animación desde el motor."
+      },
+      {
+        "id": "005",
+        "official_filename": "MEC_ball_drop.wav",
+        "category": "MEC",
+        "subtype": "ball",
+        "game_event": "ball_lands",
+        "usage": "La bola cae y se asienta en una casilla",
+        "objective": "Marcar el impacto definitivo del resultado",
+        "duration_seconds": "1.0",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "1.0 seconds. Roulette ball dropping and settling into a numbered pocket. Several irregular bounces resolving into a final rest. Ivory ball against brass dividers and wood. Marks a definitive, irreversible result. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Neutro: no debe anticipar si el jugador gana."
+      },
+      {
+        "id": "006",
+        "official_filename": "MEC_card_shuffle.wav",
+        "category": "MEC",
+        "subtype": "card",
+        "game_event": "deck_shuffle",
+        "usage": "El crupier baraja el mazo",
+        "objective": "Preparar la mesa para una nueva mano",
+        "duration_seconds": "1.8",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "1.8 seconds. Dealer shuffling a deck of cards. Riffle friction followed by a bridge release and a final tap. Coated paper cards on felt. Signals the start of a fresh hand. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Sincronizar con la animación del crupier."
+      },
+      {
+        "id": "007",
+        "official_filename": "MEC_card_deal.wav",
+        "category": "MEC",
+        "subtype": "card",
+        "game_event": "card_deal",
+        "usage": "Se reparte una carta individual",
+        "objective": "Feedback físico por cada carta",
+        "duration_seconds": "0.3",
+        "priority": "high",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.3 seconds. Single card dealt onto the table. Quick friction sweep ending in a soft landing. Coated paper sliding on felt cloth. Neutral physical feedback per card. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Crear 3 variantes: se repite muchas veces por mano."
+      },
+      {
+        "id": "008",
+        "official_filename": "MEC_card_reveal.wav",
+        "category": "MEC",
+        "subtype": "card",
+        "game_event": "dealer_reveal",
+        "usage": "El crupier voltea su carta oculta",
+        "objective": "Generar suspenso en el momento decisivo",
+        "duration_seconds": "0.5",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.5 seconds. Dealer flipping the face-down card. Crisp snap opening into a short settle. Stiff coated paper against felt. Creates a decisive suspenseful beat without revealing the outcome. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Se apoya en el silencio previo. No añadir cola."
+      },
+      {
+        "id": "009",
+        "official_filename": "STG_player_win.wav",
+        "category": "STG",
+        "subtype": "result",
+        "game_event": "player_win",
+        "usage": "El jugador gana la mano",
+        "objective": "Celebrar con lectura clara de casino",
+        "duration_seconds": "2.0",
+        "priority": "high",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "2.0 seconds. Player winning the hand at a casino table. Bright impact, short ascending motif, clean resolution. Brass, vibraphone, light chip movement. Celebrates clearly with premium casino readability. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Voz del crupier NO incluida: requiere activar vocals_allowed en la configuración del proyecto."
+      },
+      {
+        "id": "010",
+        "official_filename": "STG_player_lose.wav",
+        "category": "STG",
+        "subtype": "result",
+        "game_event": "player_lose",
+        "usage": "El jugador pierde la mano",
+        "objective": "Cerrar la mano sin castigar",
+        "duration_seconds": "1.2",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "1.2 seconds. Player losing the hand at a casino table. Soft descending two-note settle with a short close. Muted low brass and damped wood. Closes the round respectfully, inviting another hand. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Evitar sonido cómico de derrota: rompe el tono premium."
+      },
+      {
+        "id": "011",
+        "official_filename": "UI_bet_confirm.wav",
+        "category": "UI",
+        "subtype": "confirm",
+        "game_event": "bet_confirm",
+        "usage": "El jugador confirma su apuesta antes de la ronda",
+        "objective": "Cerrar la decisión con más peso que colocar una ficha",
+        "duration_seconds": "0.3",
+        "priority": "high",
+        "loop": false,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.3 seconds. Bet confirmation before a round begins. Firm contact followed by a short affirmative settle. Clay chip and wooden table edge. Communicates a committed decision, distinct from placing a single chip. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Debe distinguirse claramente de UI_chip_place, que se repite mucho."
+      },
+      {
+        "id": "012",
+        "official_filename": "UI_betting_closed.wav",
+        "category": "UI",
+        "subtype": "phase",
+        "game_event": "betting_closed",
+        "usage": "Se cierra la fase de apuestas",
+        "objective": "Marcar el punto sin retorno de la ronda",
+        "duration_seconds": "0.6",
+        "priority": "high",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.6 seconds. Betting phase closing at a casino table. Two descending accents resolving into silence. Muted wood block and low damped tone. Marks a point of no return calmly, without alarm. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Sin voz: el aviso del crupier requiere activar el habla en la configuración."
+      },
+      {
+        "id": "013",
+        "official_filename": "UI_turn_alert.wav",
+        "category": "UI",
+        "subtype": "turn",
+        "game_event": "player_turn",
+        "usage": "Le toca actuar al jugador",
+        "objective": "Reclamar atención sin presionar",
+        "duration_seconds": "0.4",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.4 seconds. Player turn notification at a table game. Soft double chime with a clean decay. Small struck metal and light glass. Requests attention politely, without urgency. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Se repite cada mano: debe tolerar la repetición."
+      },
+      {
+        "id": "014",
+        "official_filename": "UI_timer_warning.wav",
+        "category": "UI",
+        "subtype": "countdown",
+        "game_event": "time_running_out",
+        "usage": "Se agota el tiempo para decidir",
+        "objective": "Avisar del límite creando presión medida",
+        "duration_seconds": "0.5",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "core_global",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.5 seconds. Decision timer running low at a table game. Repeated short pulses with slightly rising pitch. Dry ticking mechanism and muted tone. Creates measured pressure without panic. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Riesgo del perfil: no debe generar ansiedad. Volumen contenido."
+      },
+      {
+        "id": "015",
+        "official_filename": "MEC_dice_throw.wav",
+        "category": "MEC",
+        "subtype": "dice",
+        "game_event": "dice_throw",
+        "usage": "El jugador lanza los dados",
+        "objective": "Marcar el gesto físico del lanzamiento",
+        "duration_seconds": "0.4",
+        "priority": "high",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.4 seconds. Dice thrown onto the table. Quick release followed by the first contact with the surface. Acrylic dice on felt over hard wood. Marks the physical commitment of the throw. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Encadena sin corte con MEC_dice_roll."
+      },
+      {
+        "id": "016",
+        "official_filename": "MEC_dice_roll.wav",
+        "category": "MEC",
+        "subtype": "dice",
+        "game_event": "dice_rolling",
+        "usage": "Los dados ruedan sobre el paño",
+        "objective": "Sostener la anticipación del resultado",
+        "duration_seconds": "1.2",
+        "priority": "high",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "1.2 seconds. Dice tumbling across the table surface. Irregular series of contacts slowing down progressively. Acrylic edges on felt, occasional hard wood rebound. Sustains anticipation without indicating an outcome. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "La duración real depende de la animación: puede requerir variantes."
+      },
+      {
+        "id": "017",
+        "official_filename": "MEC_dice_settle.wav",
+        "category": "MEC",
+        "subtype": "dice",
+        "game_event": "dice_settle",
+        "usage": "Los dados se detienen y muestran el resultado",
+        "objective": "Marcar el resultado definitivo",
+        "duration_seconds": "0.3",
+        "priority": "high",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.3 seconds. Dice coming to rest after rolling. Final small rocking contacts resolving into stillness. Acrylic on felt. Marks a definitive, irreversible result, neutral in value. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Neutro: no debe anticipar si el resultado favorece al jugador."
+      },
+      {
+        "id": "018",
+        "official_filename": "MEC_card_burn.wav",
+        "category": "MEC",
+        "subtype": "card",
+        "game_event": "card_burn",
+        "usage": "El crupier descarta una carta antes de repartir",
+        "objective": "Dar peso al protocolo de la mesa",
+        "duration_seconds": "0.4",
+        "priority": "low",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.4 seconds. Dealer burning a card before the deal. Short slide followed by a soft landing on the discard pile. Coated paper on stacked cards. Reinforces table protocol without drawing attention. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "Habitual en blackjack y baccarat."
+      },
+      {
+        "id": "019",
+        "official_filename": "MEC_chip_payout.wav",
+        "category": "MEC",
+        "subtype": "chip",
+        "game_event": "chip_payout",
+        "usage": "El crupier paga las fichas al ganador",
+        "objective": "Comunicar que el premio llega al jugador",
+        "duration_seconds": "0.9",
+        "priority": "high",
+        "loop": false,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "dry",
+        "prompt": "0.9 seconds. Dealer sliding a stack of chips toward the winning player. Continuous friction with clay contacts settling into a stack. Clay chips on felt. Communicates value arriving, satisfying but not celebratory. [THEME]. No voice, no vocals, no speech, no music, clean, isolated, completely dry, zero reverb.",
+        "notes": "La celebración es del stinger: esto es el gesto físico del pago."
+      },
+      {
+        "id": "020",
+        "official_filename": "STG_push.wav",
+        "category": "STG",
+        "subtype": "result",
+        "game_event": "push",
+        "usage": "La mano termina en empate",
+        "objective": "Cerrar sin ganador ni perdedor",
+        "duration_seconds": "0.8",
+        "priority": "medium",
+        "loop": false,
+        "source_group": "project_skin",
+        "single_or_stems": "single",
+        "technical_profile": "spatial",
+        "prompt": "0.8 seconds. Hand ending in a push at a casino table. Single sustained neutral tone with a clean fade. Vibraphone and soft low strings. Resolves without implying victory or defeat. [THEME]. Instrumental only, no vocals, clean game-ready mix, controlled spatial depth, strong ending.",
+        "notes": "Ni positivo ni negativo: el empate devuelve la apuesta."
+      },
+      {
+        "id": "021",
+        "official_filename": "AMB_casino_floor.wav",
+        "category": "AMB",
+        "subtype": "room",
+        "game_event": "room_ambience",
+        "usage": "Ambiente de fondo durante toda la sesión",
+        "objective": "Dar sensación de sala sin ensuciar la mezcla",
+        "duration_seconds": "60.0",
+        "priority": "low",
+        "loop": true,
+        "source_group": "shared_themed_core",
+        "single_or_stems": "single",
+        "technical_profile": "musical",
+        "prompt": "Casino floor ambience behind a table game. 60.0 seconds seamless loop. Distant sparse activity with no distinguishable events. Muffled room tone, faint distant chimes, soft air movement. Creates a sense of place, distant and diffuse. [THEME]. No music, no melody, no vocals, no chants, polished game-ready mix, controlled low end, clean loop transition.",
+        "notes": "Riesgo del perfil: ambiente demasiado denso. Sin voces reconocibles."
+      }
+    ]
+  },
+  "analysis": {
+    "systemTemplate": "\nYou are a Technical Assistant and Audio Director specialized in video games. You design sound systems, build master asset lists and write technical prompts for AI audio generation engines. The workflow targets production, editing and mixing in a DAW (Logic Pro).\n\nAnalyze the provided game images and the user's description. Write all descriptive fields in Spanish. Write every \"prompt\" field in English.\n\n{{GENRE_BRIEF}}\n\n{{DISCOVERY_BRIEF}}\n\n{{RESTRICTIONS_BRIEF}}\n\n=== NAMING (mandatory) ===\nEvery asset has an official filename following: PREFIX_descriptive_name.wav\nAllowed prefixes:\n  UI_   interface        MEC_  mechanics       SYM_  symbols and characters\n  STG_  stingers         FX_   special effects BGM_  music\n  AMB_  ambiences        VO_   authorized voice MIX_ internal final mixes\nRules: English, lowercase after the prefix, underscores, no spaces, no accents, no dates.\nNever use words like \"final\", \"new\", \"good\" or \"approved\" in a filename.\nIDs are sequential and continuous starting at \"001\". Never skip or reuse an ID.\nDo not use sector jargon like \"premium\", \"royal\", \"round16\", \"intro\", \"outro\".\n\n=== CORE BASE AND LEAN SCOPE (mandatory - 06_SCOPE_POLICY.md) ===\n- FOR SLOT GAMES, STRICT LEAN REQUIREMENT:\n  The base core consists of EXACTLY the game team's 16 official assets:\n  * 3 Beds: BGM_base_game.wav, BGM_modal.wav, BGM_freespins.wav\n  * 11 Instants: UI_click.wav, UI_click_play.wav, MEC_reel_start.wav, MEC_reel_end.wav, SYM_symbol_match.wav, STG_big_win.wav, STG_mega_win.wav, STG_super_mega_win.wav, STG_epic_win.wav, STG_freespins_start.wav, STG_freespins_end.wav\n  * 2 Loops: MEC_reel_spin.wav, MEC_win_increase.wav\n- DO NOT INFLATE THE ASSET LIST. The development team integrates only what is strictly required. A typical game produces 16 to 24 assets total!\n- DO NOT create separate UI sounds for bet change, panel opening, panel closing, volume, autoplay, turbo, or errors: the single UI_click covers ALL generic button taps.\n- DO NOT invent sounds for mere background illustrations or unconfirmed features.\n- Add conditional extras ONLY if strictly justified by game mechanics confirmed in the description, GDD, or prominent game features (e.g., wild lands, scatter lands, bonus trigger, jackpot, cascading reels).\n- Instant body duration must be <= 3.0 seconds, declared to 1 decimal place.\n\n=== VISUAL MULTIMODAL CONTEXT (CRITICAL) ===\nWhen game images or concept artwork are provided:\n1. Extract the exact Visual Style and Scenario: Examine the environment (jungle, temple, street festival, sci-fi garage, football stadium), lighting, and materials.\n2. Material Anchoring: Identify the physical materials visible on screen (e.g. bamboo, red paper lanterns, brass bell, gold ingots, jade, ceramic figurines, steel engine parts, plastic chips). All UI, MEC and SYM prompts MUST physically anchor their contact textures to these exact materials.\n3. Visible Instrument Rule: If musical instruments are drawn in the artwork (e.g. temple bells, drums, guzheng, flutes, brass), those specific instruments MUST lead the groove and harmonic identity of BGM_base_game and BGM_modal.\n4. Characters and Figurines: Inspect characters closely. If a mascot is a ceramic/stone figurine (like a Maneki-neko statue), do NOT request animal sounds or vocalizations; describe it as glazed ceramic or resonant wood.\n\n=== MODAL ARCHITECTURE (mandatory - 07_MODAL_ARCHITECTURE.md) ===\n- \"One bed for all, one effect for each\".\n- BGM_modal.wav is the single shared bed playing under all modal popups and win screens. It is neutral, energetic from measure 1, never resolves, with bright tuned metal >4kHz, low groove <1kHz, leaving 1-4kHz clear.\n- Modal win effects (STG_big_win, STG_mega_win, STG_super_mega_win, STG_epic_win) are SINGLE assets (not layered stems), with body <= 3.0s.\n- EVERY modal win effect prompt MUST include: \"No melody, no musical motif: the music comes from a separate bed.\" They consist of physical impacts, coin showers, casino bells and celebratory textures.\n\n=== PROMPT FORMULA (mandatory - 03_PROMPT_ENGINEERING.md §1 & §12) ===\n- For SFX, UI, MEC, SYM, STG:\n  Start with EXACT duration in seconds (one decimal, e.g. \"0.2 seconds.\", \"3.0 seconds.\").\n  Formula: [Duration] + [asset type and exact gameplay moment] + [temporal action] + [materials or instrumentation] + [emotional character and function] + [thematic identity] + [restrictions] + [technical treatment].\n  Instant SFX must have a body <= 3.0 seconds!\n- For BGM Beds:\n  Start with the VISUAL SCENE and SPACE (environment, time of day, materials, lighting), NOT duration and NOT a generic catalog tag like \"football slot\" or \"casino game\".\n  VISUAL INSTRUMENT RULE: If the visual art shows an instrument on screen (e.g. a drum, maracas, bells), that instrument MUST drive the rhythmic motor of the music.\n  Genre by location and instrumentation: describe specific instruments rather than broad country or commercial labels.\n\n=== TECHNICAL BRIEF ===\n{{TECHNICAL_BRIEF}}\nNever apply \"zero reverb\" to BGM or ambiences.\n\n=== AUDIO RULES ===\n- SFX must not contain music unless the asset is a stinger.\n- UI must be short, tactile, tolerant to repetition, with no fanfare, no coin showers and no long tails. UI must never sound like a reward.\n- Mechanics communicate start, movement, progress, blocking, result, error, confirmation and anticipation, without promising a win before the result.\n- Wins scale through initial impact, coins, brightness, duration, emotional rise, final close, low register and stereo width. Big wins need clear casino readability and explicit hierarchy between tiers.\n- Loops must have no audible seam.\n\n=== OUTPUT ===\nRespond with a single valid JSON object, no markdown fences, matching exactly:\n{\n  \"gameAnalysis\": {\n    \"name\": \"\", \"type\": \"\", \"theme\": \"\", \"scenario\": \"\", \"visualStyle\": \"\",\n    \"energy\": \"\", \"feeling\": \"\", \"narrative\": \"\"\n  },\n  \"context\": {\n    \"mainCharacter\": \"\", \"animals\": \"\", \"symbols\": \"\", \"objects\": \"\", \"background\": \"\",\n    \"elementsToSound\": \"\", \"materials\": \"\", \"magicElements\": \"\", \"mechanicalElements\": \"\",\n    \"naturalElements\": \"\", \"techElements\": \"\", \"colors\": \"\", \"interface\": \"\",\n    \"modes\": \"\", \"moments\": \"\"\n  },\n  \"soundDetails\": {\n    \"materials\": \"\", \"ui\": \"\", \"sfx\": \"\", \"loops\": \"\", \"bgm\": \"\", \"stingers\": \"\",\n    \"bigWins\": \"\", \"layers\": \"\", \"exclusions\": \"\", \"restrictions\": \"\"\n  },\n  \"identity\": {\n    \"summary\": \"\", \"palette\": \"\", \"rules\": \"\",\n    \"themeTag\": \"short thematic identity IN ENGLISH, 2-5 words, e.g. 'jungle temple' or 'futuristic neon casino'\"\n  },\n  \"doubts\": {\n    \"confirmed\": [\"Hechos visibles sin ambigüedad en las imágenes\"],\n    \"probable\": [\"Deducciones con alta confianza pero no explícitas\"],\n    \"notVisible\": [\"Aspectos que no aparecen en el material recibido\"],\n    \"needsValidation\": [\"Aspectos que debe confirmar el cliente o el diseñador\"]\n  },\n  \"sounds\": [\n    {\n      \"id\": \"001\",\n      \"official_filename\": \"UI_spin_button.wav\",\n      \"category\": \"UI\",\n      \"subtype\": \"button\",\n      \"game_event\": \"spin_press\",\n      \"usage\": \"Momento exacto de uso, en español\",\n      \"objective\": \"Objetivo del sonido, en español\",\n      \"duration_seconds\": \"0.2\",\n      \"priority\": \"high\",\n      \"loop\": false,\n      \"source_group\": \"core_global\",\n      \"single_or_stems\": \"single\",\n      \"technical_profile\": \"dry\",\n      \"prompt\": \"Full English prompt following the formula above\",\n      \"notes\": \"Observaciones en español\"\n    }\n  ]\n}\n\nField constraints:\n- \"category\" is one of: UI, MEC, SYM, STG, FX, BGM, AMB, VO, MIX.\n- \"priority\" is one of: high, medium, low.\n- \"source_group\" is one of: core_global (generic reusable interface and feedback), shared_themed_core (reusable within a visual family), project_skin (exclusive to this game: mascots, WILD, SCATTER, bonus, BGM, themed stingers).\n- \"single_or_stems\" is \"stems\" only when one generation cannot give enough control: long events, too many materials, or wins needing layer-by-layer mixing. Otherwise \"single\".\n- \"technical_profile\" is one of: dry, spatial, musical.\n- Do NOT include any status field. All assets start unvalidated by definition.\n- \"layers\" describes which events need to be built from stems and with what layers.\n- \"doubts\" is mandatory and must reflect your actual certainty. Do not put everything\n  under \"confirmed\": if you inferred something rather than seeing it, it is \"probable\".\n  If the profile requires a fact you could not determine, it goes under \"notVisible\"\n  or \"needsValidation\". An honest doubt is more useful than a confident guess.\n- Every descriptive field must be filled. If something genuinely does not apply to this\n  game, write why in one short phrase instead of leaving it empty.\n- \"themeTag\" is the [thematic identity] component that goes literally into every prompt.\n  It must be IN ENGLISH, 2 to 5 words, lowercase, with no trailing period. Do not append\n  the word \"theme\": it is added automatically. Use the same tag in every prompt of the\n  \"sounds\" array so the whole game sounds like one identity.\n",
+    "descriptionTemplate": "Descripción del juego: {{DESCRIPTION}}"
+  }
+}

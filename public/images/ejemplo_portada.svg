@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Un bosque al anochecer con farolillos y luciérnagas">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1030"/>
+      <stop offset="0.55" stop-color="#16314a"/>
+      <stop offset="1" stop-color="#1f4a3a"/>
+    </linearGradient>
+    <radialGradient id="luz">
+      <stop offset="0" stop-color="#ffd978" stop-opacity="1"/>
+      <stop offset="0.35" stop-color="#ffb23e" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffb23e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="luna">
+      <stop offset="0" stop-color="#fff2c8" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#cfe3ff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#cfe3ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#cielo)"/>
+  <circle cx="880" cy="170" r="190" fill="url(#luna)"/>
+  <circle cx="880" cy="170" r="46" fill="#fff6dc" opacity="0.92"/>
+
+  <!-- Niebla baja -->
+  <ellipse cx="400" cy="520" rx="520" ry="70" fill="#9fc7b5" opacity="0.10"/>
+  <ellipse cx="900" cy="560" rx="460" ry="60" fill="#9fc7b5" opacity="0.10"/>
+
+  <!-- Troncos y copas del fondo -->
+  <g fill="#10281f" opacity="0.8">
+    <rect x="120" y="150" width="46" height="525"/>
+    <rect x="470" y="110" width="58" height="565"/>
+    <rect x="760" y="170" width="40" height="505"/>
+    <rect x="1040" y="130" width="52" height="545"/>
+  </g>
+
+  <!-- Troncos y copas del primer plano -->
+  <g fill="#081811">
+    <rect x="-20" y="60" width="110" height="615"/>
+    <rect x="1110" y="40" width="130" height="635"/>
+    <path d="M0 675 L0 585 Q180 520 360 600 T720 590 T1200 600 L1200 675 Z"/>
+  </g>
+
+  <!-- Farolillos de vidrio colgados de las ramas -->
+  <g stroke="#2b3b30" stroke-width="3">
+    <line x1="300" y1="0" x2="300" y2="170"/>
+    <line x1="640" y1="0" x2="640" y2="120"/>
+    <line x1="960" y1="0" x2="960" y2="210"/>
+  </g>
+  <g>
+    <circle cx="300" cy="215" r="90" fill="url(#luz)"/>
+    <rect x="282" y="170" width="36" height="56" rx="12" fill="#ffd27a" opacity="0.95"/>
+    <circle cx="640" cy="165" r="100" fill="url(#luz)"/>
+    <rect x="620" y="118" width="40" height="60" rx="13" fill="#ffd27a" opacity="0.95"/>
+    <circle cx="960" cy="255" r="85" fill="url(#luz)"/>
+    <rect x="943" y="212" width="34" height="52" rx="11" fill="#ffd27a" opacity="0.95"/>
+  </g>
+
+  <!-- Luciérnagas -->
+  <g fill="#ffe08a">
+    <circle cx="210" cy="420" r="5"/><circle cx="395" cy="360" r="4"/><circle cx="560" cy="440" r="6"/>
+    <circle cx="700" cy="330" r="4"/><circle cx="820" cy="450" r="5"/><circle cx="1010" cy="400" r="6"/>
+    <circle cx="470" cy="520" r="4"/><circle cx="900" cy="520" r="4"/><circle cx="130" cy="300" r="4"/>
+    <circle cx="1100" cy="330" r="5"/><circle cx="610" cy="250" r="3"/><circle cx="350" cy="470" r="3"/>
+  </g>
+  <g fill="url(#luz)" opacity="0.8">
+    <circle cx="560" cy="440" r="22"/><circle cx="1010" cy="400" r="22"/><circle cx="210" cy="420" r="18"/>
+    <circle cx="820" cy="450" r="18"/><circle cx="395" cy="360" r="16"/>
+  </g>
+</svg>

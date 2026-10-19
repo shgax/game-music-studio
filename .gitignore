@@ -1,0 +1,26 @@
+# Dependencias y compilado
+node_modules
+dist
+dist-ssr
+
+# Claves y ajustes locales: nunca al repositorio. Solo .env.example se versiona.
+.env
+.env.*
+!.env.example
+
+# Registros
+logs
+*.log
+npm-debug.log*
+
+# Editor y sistema
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.sw?
+*.local
+
+# Despliegue
+.vercel

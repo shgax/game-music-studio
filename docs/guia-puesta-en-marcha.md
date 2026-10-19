@@ -1,4 +1,6 @@
-# Sonidos Dashboard · Guía de puesta en marcha
+# Game Music Studio · Guía de puesta en marcha
+
+[← Volver al README](../README.md)
 
 Esta herramienta te ayuda a crear los sonidos de un videojuego: le cuentas cómo es tu juego, una inteligencia artificial te propone qué sonidos hacen falta, tú eliges cuáles producir, los generas y al final compartes una lista con el equipo.
 
@@ -111,3 +113,7 @@ Los prompts que propone la herramienta —el catálogo, las listas base de cada 
 ## Actualizar la herramienta
 
 Cuando te envíen una versión nueva, descomprímela en otra carpeta y ábrela con el lanzador. Para conservar tus juegos, usa **Descargar respaldo JSON** en la versión anterior; los juegos viven en el navegador, así que seguirán ahí mientras uses **http://localhost:5173/**.
+
+---
+
+¿Sigue sin funcionar o tienes una idea? [Abre una incidencia](https://github.com/shgax/game-music-studio/issues/new) o díselo a quien te pasó el enlace. Licencia [MIT](../LICENSE).
